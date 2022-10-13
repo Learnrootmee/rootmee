@@ -1,0 +1,22 @@
+error_page 404 /rootmee/404_not_found/index.html;
+location ~ ^/rootmee/404_not_found/$ { internal; }
+location ~ ^/rootmee/user/$ { return 302 http://localhost/rootmee; }
+location ~ ^/rootmee/logout/$ { return 302 http://localhost/rootmee; }
+location ~ ^/rootmee/account/$ { return 302 https://learnrootmee.github.io/rootmee/login/?redirect_to=http%3A%2F%2Flocalhost%2Frootmee%2Faccount%2F; }
+location ~ ^/rootmee/author/root/$ { return 302 https://learnrootmee.github.io/rootmee/user/root/; }
+location ~ ^/rootmee/wp-json/wp/v2/pages/92$ { return 302 http://localhost/rootmee; }
+location ~ ^/rootmee/feed/$ { types { } default_type "application/rss+xml; charset=UTF-8"; }
+location ~ ^/rootmee/wp-sitemap-index.xsl$ { types { } default_type "application/xml; charset=UTF-8"; }
+location ~ ^/rootmee/comments/feed/$ { types { } default_type "application/rss+xml; charset=UTF-8"; }
+location ~ ^/rootmee/wp-json/$ { types { } default_type "application/json; charset=UTF-8"; }
+location ~ ^/rootmee/wp-json/wp/v2/pages/5$ { types { } default_type "application/json; charset=UTF-8"; }
+location ~ ^/rootmee/wp-sitemap.xsl$ { types { } default_type "application/xml; charset=UTF-8"; }
+location ~ ^/rootmee/wp-json/wp/v2/pages/94$ { types { } default_type "application/json; charset=UTF-8"; }
+location ~ ^/rootmee/wp-json/wp/v2/pages/22$ { types { } default_type "application/json; charset=UTF-8"; }
+location ~ ^/rootmee/wp-json/wp/v2/pages/93$ { types { } default_type "application/json; charset=UTF-8"; }
+location ~ ^/rootmee/wp-json/wp/v2/pages/97$ { types { } default_type "application/json; charset=UTF-8"; }
+location ~ ^/rootmee/wp-json/wp/v2/pages/44$ { types { } default_type "application/json; charset=UTF-8"; }
+location ~ ^/rootmee/2022/10/12/hello-world/feed/$ { types { } default_type "application/rss+xml; charset=UTF-8"; }
+location ~ ^/rootmee/category/uncategorized/feed/$ { types { } default_type "application/rss+xml; charset=UTF-8"; }
+location ~ ^/rootmee/wp-json/wp/v2/categories/1$ { types { } default_type "application/json; charset=UTF-8"; }
+location ~ ^/rootmee/wp-json/wp/v2/posts/1$ { types { } default_type "application/json; charset=UTF-8"; }
